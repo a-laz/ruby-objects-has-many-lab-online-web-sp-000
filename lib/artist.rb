@@ -21,7 +21,7 @@ class Artist
   end
 
   def self.song_count
-    #find number of songs per artist 
+    #find number of songs per artist
     #Iterate through @@all
     #Increment count for each song associated to artist
     #return count
