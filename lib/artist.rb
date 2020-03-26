@@ -25,13 +25,14 @@ class Artist
     #Iterate through @@all
     #Increment count for each song associated to artist
     #return count
-    count = 0
-    Song.all.each do |song|
-      if song.artist
-        count +=1
-      end
-    end
-    count
+    #count = 0
+    #Song.all.each do |song|
+    #  if song.artist
+    #    count +=1
+    #  end
+    #end
+    #count
+    Song.all.count {|song| song.artist}
   end
 
 end
