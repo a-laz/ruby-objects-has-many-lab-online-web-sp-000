@@ -21,6 +21,16 @@ class Artist
   end
 
   def self.song_count
-    @songs.size
+    #find number of songs per artist 
+    #Iterate through @@all
+    #Increment count for each song associated to artist
+    #return count
+    count = 0
+    Song.all.each do |song|
+      if song.artist
+        count +=1
+      end
+    end
+    count
   end
 end
