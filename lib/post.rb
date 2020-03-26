@@ -7,6 +7,6 @@ class Post
     @@all << self
   end
 
-  
+
 
 end
